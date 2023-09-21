@@ -1,5 +1,3 @@
-# Jarkom-Modul-1-B08-
-
 # Jarkom-Modul-1-B08-2023
 
 |Nama|NRP|Kelas|
