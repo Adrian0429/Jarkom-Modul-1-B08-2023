@@ -136,7 +136,7 @@ kemudian dari soal, didapatkan juga informasi bahwa a1, e5, u21. Hal ini menunju
 
 ![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/d6c88be4-182a-49af-9328-2d05efcc4282)
 
-setelah itu didapatkan kode JDJRNJA, yang apabila kita inputkan maka akan menghasilkan token 
+setelah itu didapatkan kode JDRNJA, yang apabila kita inputkan maka akan menghasilkan token 
 
 ![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/8f816983-9c5f-47cc-8dbd-08072e37d8b1)
 
