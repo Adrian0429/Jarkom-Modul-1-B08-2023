@@ -1,4 +1,4 @@
-![Screenshot from 2023-09-18 21-04-04](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/299b9df4-b4cf-4f9e-9230-4437fbf465b2)# Jarkom-Modul-1-B08-2023
+# Jarkom-Modul-1-B08-2023
 
 |Nama|NRP|Kelas|
 |:--:|:-:|:---:|
