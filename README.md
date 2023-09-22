@@ -194,4 +194,5 @@ dan apabila diinput pada bash maka didapatkan flagnya.
   ![Screenshot from 2023-09-18 21-11-51](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/2e2f4a65-ec25-4ddc-9eb1-2604d8de3e4c)
 
 - Hasilnya adalah :
+  
   ![Screenshot from 2023-09-18 21-01-38](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/16c39534-02ba-4a94-b380-8d6b48704f43)
