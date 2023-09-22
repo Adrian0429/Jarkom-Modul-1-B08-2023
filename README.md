@@ -1,4 +1,4 @@
-# Jarkom-Modul-1-B08-2023
+![Screenshot from 2023-09-18 21-04-04](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/299b9df4-b4cf-4f9e-9230-4437fbf465b2)# Jarkom-Modul-1-B08-2023
 
 |Nama|NRP|Kelas|
 |:--:|:-:|:---:|
@@ -35,6 +35,18 @@ untuk mengecek response nya, kita dapat follow aktivitas STOR tersebut dan melih
 
 ### Soal 2
 ### Sebutkan web server yang digunakan pada portal praktikum Jaringan Komputer!
+- Pertama, kita mencari IP Address dari praktikum jarkom (10.21.78.11) menggunakan display filter
+  ```
+  ip.addr == 10.21.78.111 and tcp.port == 8000
+  ```
+  ![Screenshot from 2023-09-22 16-26-23](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/675a850b-3b8d-4abe-b5ba-debb02b96313)
+  
+- Selanjutnya, kita melakukan follow TCP Stream untuk memverifikasi apakah benar data tersebut memunculkan halaman dari portal praktikum jarkom
+  ![Screenshot from 2023-09-18 20-30-30](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/b46bfff9-7aef-4c1f-baf9-d849784b0dfd)
+
+- Setelah itu, kita mendapatkan webserver yang digunakan di portal praktikum jarkom, yaitu ```gunicorn```
+  ![Screenshot from 2023-09-18 21-00-41](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/451f013d-c131-4bf9-8ac5-61f035192b8f)
+
 
 ### Soal 3
 ### Dapin sedang belajar analisis jaringan. Bantulah Dapin untuk mengerjakan soal berikut:
@@ -115,12 +127,34 @@ kemudian didapatkan tokennya
 
 ### Soal 7
 ### Berapa jumlah packet yang menuju IP 184.87.193.88?
+- Pertama, kita inputkan pada display filter :
+  ```
+  ip.dst == 184.87.193.88?
+  ```
+- Selanjutnya, muncul beberapa 6 paket yang menuju IP tersebut
+  ![Screenshot from 2023-09-18 21-28-17](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/6e197f8a-d1e3-410d-bc6c-c1cccdd27b8c)
+
+
+- Hasilnya adalah :
+  ![Screenshot from 2023-09-18 21-29-27](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/caf29adf-71ed-454b-8c09-cedb755fd7cd)
+
+  
 
 ### Soal 8
 ### Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+- Pertama, kita lakukan filter dengan cara :
+  ```
+  tcp.dstport == 80 || udp.dstport == 80
+  ```
+  Ini akan mengambil seluruh paket yang menuju port 80
+  
+- Hasilnya adalah :
+  ![Screenshot from 2023-09-18 21-04-04](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/090554c4-9fef-4844-9556-10589c7c666e)
+
 
 ### Soal 9
 ### Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+- 
 
 untuk mendapatkan filter yang mengambil alamat 10.51.40.1 tetapi tidak menuju alamat 10.39.55.34! dapat digunakan query :
 ```
@@ -133,3 +167,19 @@ dan apabila diinput pada bash maka didapatkan flagnya.
 
 ### Soal 10
 ### Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet
+- Pertama, kita cari seluruh protokol yang menggunakan protokol telnet
+  ```
+  telnet
+  ```
+  ![Screenshot from 2023-09-18 20-50-34](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/5d29b5fb-4721-4f20-8c46-b0d918ae913f)
+
+- Untuk mendapatkan username dan password dari login menggunakan Telnet, kita menggunakan display filter telnet untuk filtering yang menggunakan TELNET saja. Kemudian, sorting dari length yang tertinggi. Sorting dilakukan untuk mendapatkan paket yang benar-benar terkirim
+  ![Screenshot from 2023-09-18 21-10-32](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/2470f949-723b-4803-81f1-096b4a516616)
+
+- Kita mendapatkan credentials username dan passwordnya
+  ![Screenshot from 2023-09-18 21-10-32](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/113b5c80-c1c3-48ef-a461-4bc478cdc181)
+
+  ![Screenshot from 2023-09-18 21-11-51](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/2e2f4a65-ec25-4ddc-9eb1-2604d8de3e4c)
+
+- Hasilnya adalah :
+  ![Screenshot from 2023-09-18 21-01-38](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/16c39534-02ba-4a94-b380-8d6b48704f43)
