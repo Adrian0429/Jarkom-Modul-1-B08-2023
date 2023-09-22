@@ -125,8 +125,22 @@ kemudian didapatkan tokennya
 ![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/a92cc95c-d9d9-4f7f-a448-8642e9dc1e5e)
 
 
-### Soal 6
+### Soal 6 (REVISI)
 ### Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+
+Dari soal didapatkan informasi "server SOURCE ADDRESS 7812 is invalid", hal ini menunjukkan bahwa ada sesuatu pada address dari paket 7812.
+
+![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/b83b2f40-c788-4977-8dc4-9769028bdd9c)
+
+kemudian dari soal, didapatkan juga informasi bahwa a1, e5, u21. Hal ini menunjukkan bahwa angka 1 = a, 2 = b, dan seterusnya. Ini digunakan untuk decrypt dari source address paket 7812
+
+![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/d6c88be4-182a-49af-9328-2d05efcc4282)
+
+setelah itu didapatkan kode JDJRNJA, yang apabila kita inputkan maka akan menghasilkan token 
+
+![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/8f816983-9c5f-47cc-8dbd-08072e37d8b1)
+
+
 
 ### Soal 7
 ### Berapa jumlah packet yang menuju IP 184.87.193.88?
