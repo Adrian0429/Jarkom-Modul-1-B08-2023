@@ -39,12 +39,15 @@ untuk mengecek response nya, kita dapat follow aktivitas STOR tersebut dan melih
   ```
   ip.addr == 10.21.78.111 and tcp.port == 8000
   ```
+  
   ![Screenshot from 2023-09-22 16-26-23](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/675a850b-3b8d-4abe-b5ba-debb02b96313)
   
 - Selanjutnya, kita melakukan follow TCP Stream untuk memverifikasi apakah benar data tersebut memunculkan halaman dari portal praktikum jarkom
+  
   ![Screenshot from 2023-09-18 20-30-30](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/b46bfff9-7aef-4c1f-baf9-d849784b0dfd)
 
 - Setelah itu, kita mendapatkan webserver yang digunakan di portal praktikum jarkom, yaitu ```gunicorn```
+  
   ![Screenshot from 2023-09-18 21-00-41](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/451f013d-c131-4bf9-8ac5-61f035192b8f)
 
 
@@ -128,14 +131,18 @@ kemudian didapatkan tokennya
 ### Soal 7
 ### Berapa jumlah packet yang menuju IP 184.87.193.88?
 - Pertama, kita inputkan pada display filter :
+  
   ```
   ip.dst == 184.87.193.88?
   ```
+  
 - Selanjutnya, muncul beberapa 6 paket yang menuju IP tersebut
+  
   ![Screenshot from 2023-09-18 21-28-17](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/6e197f8a-d1e3-410d-bc6c-c1cccdd27b8c)
 
 
 - Hasilnya adalah :
+  
   ![Screenshot from 2023-09-18 21-29-27](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/caf29adf-71ed-454b-8c09-cedb755fd7cd)
 
   
@@ -149,6 +156,7 @@ kemudian didapatkan tokennya
   Ini akan mengambil seluruh paket yang menuju port 80
   
 - Hasilnya adalah :
+  
   ![Screenshot from 2023-09-18 21-04-04](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/090554c4-9fef-4844-9556-10589c7c666e)
 
 
@@ -162,6 +170,7 @@ ip.src == 10.51.40.1 && ip.dst != 10.39.55.34
 ```
 
 dan apabila diinput pada bash maka didapatkan flagnya.
+
 ![image](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/86884506/d7ec3355-9828-4ea9-b057-50c075c7702f)
 
 
@@ -171,12 +180,15 @@ dan apabila diinput pada bash maka didapatkan flagnya.
   ```
   telnet
   ```
+  
   ![Screenshot from 2023-09-18 20-50-34](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/5d29b5fb-4721-4f20-8c46-b0d918ae913f)
 
 - Untuk mendapatkan username dan password dari login menggunakan Telnet, kita menggunakan display filter telnet untuk filtering yang menggunakan TELNET saja. Kemudian, sorting dari length yang tertinggi. Sorting dilakukan untuk mendapatkan paket yang benar-benar terkirim
+  
   ![Screenshot from 2023-09-18 21-10-32](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/2470f949-723b-4803-81f1-096b4a516616)
 
 - Kita mendapatkan credentials username dan passwordnya
+  
   ![Screenshot from 2023-09-18 21-10-32](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/113b5c80-c1c3-48ef-a461-4bc478cdc181)
 
   ![Screenshot from 2023-09-18 21-11-51](https://github.com/Adrian0429/Jarkom-Modul-1-B08-2023/assets/92865110/2e2f4a65-ec25-4ddc-9eb1-2604d8de3e4c)
